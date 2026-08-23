@@ -14,13 +14,13 @@ import Logo from "../images/logo.png";
 
 function Navbar() {
   return(
-    <nav className="bg-red-500 p-4 flex items-center h-[80px]">
-  <div>
-    <img src={Logo} alt="logo" className=""></img>
-  </div>
-  <div></div>
-  <div></div>
-</nav>
+    <nav className="bg-[#010e24] p-4 flex items-center h-[80px]">
+      <div>
+        <img src={Logo} alt="logo" className="w-[20px] h-[20px]"></img>
+      </div>
+      <div></div>
+      <div></div>
+    </nav>
   );
 }
 
