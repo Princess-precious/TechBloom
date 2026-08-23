@@ -11,11 +11,13 @@
     * - Modification    : 
 **/
 import Navbar from "../components/Navbar";
+import Section1home from "../components/Section1home";
 
 function Home(){
   return(
     <>
       <Navbar/>
+      <Section1home/>
     </>
   );
 }
