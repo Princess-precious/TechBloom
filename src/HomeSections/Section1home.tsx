@@ -10,12 +10,16 @@
     * - Author          : HP
     * - Modification    : 
 **/
+import H1 from "../ui/h1";
 
 function Section1home() {
   return(
-    <section className="bg-[#041329]h-auto flex flex-row">
-      <div className="">
-        <h1>Cultivating brilliance.<br>Empowering growth.</br></h1>
+    <section className="bg-[#0d1c32] h-auto p-8 flex flex-row">
+      <div className="flex flex-col justify-between text-white">
+        <H1>
+          Cultivating brilliance.
+          <br/><span className="text-[#64ffda]">Empowering growth. </span>
+        </H1>
         <p></p>
         <div>
           <a></a>

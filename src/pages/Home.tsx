@@ -2,11 +2,11 @@
     * @description      : 
     * @author           : HP
     * @group            : 
-    * @created          : 22/08/2026 - 14:48:27
+    * @created          : 24/08/2026 - 15:37:21
     * 
     * MODIFICATION LOG
     * - Version         : 1.0.0
-    * - Date            : 22/08/2026
+    * - Date            : 24/08/2026
     * - Author          : HP
     * - Modification    : 
 **/
@@ -16,7 +16,7 @@ import Section1home from "../HomeSections/Section1home";
 function Home(){
   return(
     <>
-      <Navbar/>
+      <Navbar/> 
       <Section1home/>
     </>
   );
