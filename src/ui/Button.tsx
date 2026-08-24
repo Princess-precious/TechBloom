@@ -20,7 +20,7 @@ type ButtonProps = {
 
 function Button({onClick, className, children }: ButtonProps) {
     return (
-        <button onClick={onClick} className={className}>
+        <button onClick={onClick} className={`bg-[#64ffda] text-black rounded-sm hover:opacity-80 active:opacity-80 ${className ?? ""}`}>
             {children}
         </button>
     )

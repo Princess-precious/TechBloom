@@ -35,7 +35,7 @@ function Navbar() {
       </div>
 
       <div className="hidden md:flex md:items-center md:gap-4">
-        <Button className="bg-[#64ffda] text-black text-sm p-1 rounded-sm hover:opacity-80 active:opacity-80">Sign In</Button>
+        <Button className=" text-sm p-1">Sign In</Button>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2d6a6a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -43,13 +43,13 @@ function Navbar() {
           </svg>
         </div>
       </div>
-
-      <Button
+      {/* hamburger button */}
+      <button
       className="md:hidden"
       onClick={() => setShowMenu(!showMenu)}>
         
         <img src={MenuIcon} alt="Menu" className="w-6 h-6 color-[#64ffda]" />
-      </Button>
+      </button>
     </nav>
 
     {showMenu && (

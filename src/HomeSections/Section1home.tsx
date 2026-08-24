@@ -14,8 +14,8 @@
 function Section1home() {
   return(
     <section className="bg-[#041329]h-auto flex flex-row">
-      <div>
-        <h1></h1>
+      <div className="">
+        <h1>Cultivating brilliance.<br>Empowering growth.</br></h1>
         <p></p>
         <div>
           <a></a>
