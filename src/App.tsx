@@ -5,9 +5,10 @@ import Home from "./pages/Home";
 
 export default function App() {
     return (
+
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Learninghub/>} />
+                <Route path="/learninghub" element={<Learninghub/>} />
                 <Route path="/" element={<Home/>} />
             </Routes>
         </BrowserRouter>
