@@ -11,7 +11,7 @@
     * - Modification    : 
 **/
 import Navbar from "../components/Navbar";
-import Section1home from "../components/Section1home";
+import Section1home from "../";
 
 function Home(){
   return(

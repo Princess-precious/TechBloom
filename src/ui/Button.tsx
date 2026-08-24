@@ -10,3 +10,20 @@
     * - Author          : HP
     * - Modification    : 
 **/
+import React from "react";
+
+type ButtonProps = {
+    onClick?: () => void;
+    className?: string;
+    children?: React.ReactNode;
+}
+
+function Button({onClick, className, children }: ButtonProps) {
+    return (
+        <button onClick={onClick} className={className}>
+            {children}
+        </button>
+    )
+}
+
+export default Button;

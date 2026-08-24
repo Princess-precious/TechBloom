@@ -13,7 +13,7 @@
 
 function Section1home() {
   return(
-    <section>
+    <section className="bg-[#041329]h-auto flex flex-row">
       <div>
         <h1></h1>
         <p></p>
