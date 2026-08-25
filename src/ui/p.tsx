@@ -10,16 +10,17 @@
     * - Author          : HP
     * - Modification    : 
 **/
-import react from "react";
+import React from "react";
 
 type PProps = {
   text?: string;
   children?: React.ReactNode;
+  className?: string;
 }
 
-function P({ text, children }: PProps) {
+function P({ text, children, className }: PProps) {
   return(
-    <p className="text-white text-xs mt-4 mb-8">
+    <p className={`text-white text-xs mt-4 mb-4 ${className ?? ""}`}>
       {text}
       {children}
     </p>
