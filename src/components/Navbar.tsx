@@ -21,7 +21,7 @@ function Navbar() {
 
   return(
    <>
-    <nav className="bg-[#010e24] py-4 px-12 flex items-center justify-between h-[80px]">
+    <nav className="fixed top-0 left-0 w-full bg-[#010e24] py-4 px-12 flex items-center justify-between h-[80px]">
       <div className="flex items-center gap-2">
         <img src={Logo} alt="logo" className="w-[25px] h-[25px]"></img>
         <Link to="/" className="text-white text-2xl font-bold">TechBloom</Link>
@@ -30,7 +30,7 @@ function Navbar() {
         
       <div className="hidden md:flex md:items-center md:gap-6 md:text-sm text-white">
         <Link to="" className="hover:text-[#64ffda] active:text-[#64ffda]">Stories</Link>
-        <Link to="" className="hover:text-[#64ffda] active:text-[#64ffda]">LearningHub</Link>
+        <Link to="/learninghub" className="hover:text-[#64ffda] active:text-[#64ffda]">LearningHub</Link>
         <Link to="" className="hover:text-[#64ffda] active:text-[#64ffda]">PathFinder Quiz</Link>
       </div>
 

@@ -12,12 +12,14 @@
 **/
 import Navbar from "../components/Navbar";
 import Section1home from "../HomeSections/Section1home";
+import Section2home from "../HomeSections/Section2home";
 
 function Home(){
   return(
     <>
       <Navbar/> 
       <Section1home/>
+      <Section2home/>
     </>
   );
 }
