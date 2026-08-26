@@ -29,7 +29,7 @@ function Navbar() {
       </div>
         
       <div className="hidden md:flex md:items-center md:gap-6 md:text-sm text-white">
-        <Link to="" className="hover:text-[#64ffda] active:text-[#64ffda]">Stories</Link>
+        <Link to="/stories" className="hover:text-[#64ffda] active:text-[#64ffda]">Stories</Link>
         <Link to="/learninghub" className="hover:text-[#64ffda] active:text-[#64ffda]">LearningHub</Link>
         <Link to="" className="hover:text-[#64ffda] active:text-[#64ffda]">PathFinder Quiz</Link>
       </div>

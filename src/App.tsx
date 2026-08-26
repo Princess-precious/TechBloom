@@ -12,14 +12,17 @@
 **/
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import CoursePage from "./pages/coursepage";
+// import CoursePage from "./pages/coursepage";
 import Stories from "./pages/stories";
+import LearningHub from "./pages/learninghub";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/stories" element={<Stories/>}/>
+        <Route path="/learninghub" element={<LearningHub/>}/>
       </Routes>
     </BrowserRouter>
   );
