@@ -42,7 +42,7 @@ function Section2home() {
           </div>
         </div>
 
-        <div className="flex flex-1 flex-col order-1 md:order-2">
+        <div className="flex items-center text-center md:text-start md:items-start flex-1 flex-col order-1 md:order-2">
           <H1 className="text-2xl">
             About Us
           </H1>

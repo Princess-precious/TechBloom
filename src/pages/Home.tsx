@@ -13,6 +13,8 @@
 import Navbar from "../components/Navbar";
 import Section1home from "../HomeSections/Section1home";
 import Section2home from "../HomeSections/Section2home";
+import Section3home from "../HomeSections/Section3home";
+import Section4home from "../HomeSections/Section4home";
 
 function Home(){
   return(
@@ -20,6 +22,8 @@ function Home(){
       <Navbar/> 
       <Section1home/>
       <Section2home/>
+      <Section3home/>
+      <Section4home/>
     </>
   );
 }
