@@ -1,41 +1,17 @@
 import { useState } from "react";
-
-type ModuleStatus = "completed" | "current" | "locked";
-
-type Module = {
-  title: string;
-  status: ModuleStatus;
-};
+import{initialModules,type Module,} from "../Data/learningdata";
 
 function LearningJourney() {
-  const [modules, setModules] = useState<Module[]>([
-    {
-      title: "HTML & CSS Fundamentals",
-      status: "completed",
-    },
-    {
-      title: "JavaScript Essentials",
-      status: "completed",
-    },
-    {
-      title: "React Fundamentals",
-      status: "current",
-    },
-    {
-      title: "Building Real-World Projects",
-      status: "locked",
-    }
-  ]);
+  const [modules, setModules] = useState<Module[]>(initialModules);
 
        const completedModules = modules.filter(
        (module) => module.status === "completed"
          ).length;
 
-  const progress = Math.max(
-    1,
-    Math.round((completedModules / modules.length) * 100)
-  );
-
+  const progress = modules.length === 0
+        ? 0
+          :Math.round((completedModules/modules.length)*100);
+          
       const completeModule = (index: number) => {
   setModules((currentModules) =>
     currentModules.map((module, moduleIndex) => {
@@ -48,7 +24,7 @@ function LearningJourney() {
         };
       }
 
-      // Unlock the next module
+      
       if (
         moduleIndex === index + 1 &&
         module.status === "locked"
