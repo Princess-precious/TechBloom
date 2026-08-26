@@ -12,6 +12,8 @@
 **/
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
+import CoursePage from "./pages/coursepage";
+import Stories from "./pages/stories";
 
 export default function App() {
   return (

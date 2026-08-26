@@ -1,9 +1,13 @@
+import {Link} from "react-router-dom"
 type CourseCardProps = {
   title: string;
   description: string;
+  path:string;
 };
 
-export default function CourseCard({ title, description }: CourseCardProps) {
+export default function CourseCard({ title, description, path }: CourseCardProps) {
+
+  
   return (
     <div className="rounded-lg bg-[#142642] p-5">
 
@@ -15,9 +19,11 @@ export default function CourseCard({ title, description }: CourseCardProps) {
         {description}
       </p>
 
-      <button className="mt-4 text-sm text-cyan-300">
-        Explore →
-      </button>
+      <Link to="web-development"
+      className="mt-4 text-sm text-cyan-300" >
+              
+               Explore →
+      </Link>
 </div>
 );
 }

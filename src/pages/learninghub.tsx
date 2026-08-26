@@ -1,6 +1,7 @@
 import CourseCard from "../components/coursecard";
 import Learningjourney from "../components/learningjourney";
-import Externalplatforms from "../components/externalplatform"
+import Externalplatforms from "../components/externalplatform";
+import { courses } from "../Data/learningdata";
 
 function learningHub() {
   return (
@@ -12,7 +13,7 @@ function learningHub() {
           Learning Hub
         </h1>
 
-        <p className="mt-2 max-w-xl text-sm text-center text-gray-400">
+        <p className="mt-2 max-w-xl text-center text-sm text-gray-400">
           Elevate your skills with curated courses designed
           for women in tech. Choose your path and track your
           progress in real-time.
@@ -23,59 +24,39 @@ function learningHub() {
       
       <section>
 
-        <h2 className="mb-4 text-xl p-4 text-left  font-semibold">
+        <h2 className="mb-4 p-4 text-left text-xl font-semibold">
           Course Selection
         </h2>
 
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 
-          <CourseCard
-            title="Web Development"
-            description="Learn how to build modern websites and web applications."
-          />
-
-          <CourseCard
-            title="Data Science"
-            description="Learn data analysis, statistics and machine learning."
-          />
-
-          <CourseCard
-            title="UX Design"
-            description="Learn user experience and interface design."
-          />
-
-          <CourseCard
-            title="Cyber Security"
-            description="Learn the fundamentals of protecting digital systems."
-          />
+          {courses.map((course) => (
             <CourseCard
-            title="Mobile Development"
-            description="Learn the fundamentals of protecting digital systems."
-          />
-
-           <CourseCard
-            title="Project Management "
-            description="Learn the fundamentals of protecting digital systems."
-          />
+              key={course.title}
+              title={course.title}
+              description={course.description}
+              path={course.path}
+            />
+          ))}
 
         </div>
 
       </section>
 
-      <br/>
-            
-        <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
 
-  
-          <div className="lg:col-span-2">
-            <Learningjourney />
-                 </div>
+      {/* Learning Journey + External Platforms */}
+      <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
 
-  
-            <Externalplatforms />
+        <div className="lg:col-span-2">
+          <Learningjourney />
+        </div>
 
-                </div>
-             </main>
+        <Externalplatforms />
+
+      </div>
+
+    </main>
   );
 }
+
 export default learningHub;
