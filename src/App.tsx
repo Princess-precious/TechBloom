@@ -10,8 +10,7 @@ export default function App() {
 
         <BrowserRouter>
             <Routes>
-                <Route path="/laerninghub
-                 " element={<Learninghub/>} />
+                <Route path="/learninghub" element={<Learninghub/>} />
                 <Route path="/stories" element={<Stories/>}/>
                 <Route path="/learning/web-development"element={<CoursePage />}
 />
