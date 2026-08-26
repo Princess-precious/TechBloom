@@ -10,3 +10,20 @@
     * - Author          : HP
     * - Modification    : 
 **/
+import React from "react";
+
+type ButtonProps = {
+    onClick?: () => void;
+    className?: string;
+    children?: React.ReactNode;
+}
+
+function Button({onClick, className, children }: ButtonProps) {
+    return (
+        <button onClick={onClick} className={`bg-[#64ffda] text-black rounded-sm hover:opacity-80 active:opacity-80 ${className ?? ""}`}>
+            {children}
+        </button>
+    )
+}
+
+export default Button;
