@@ -15,6 +15,7 @@ import Section1home from "../HomeSections/Section1home";
 import Section2home from "../HomeSections/Section2home";
 import Section3home from "../HomeSections/Section3home";
 import Section4home from "../HomeSections/Section4home";
+import Footer from "../components/footer.tsx"
 
 function Home(){
   return(
@@ -24,6 +25,7 @@ function Home(){
       <Section2home/>
       <Section3home/>
       <Section4home/>
+      <Footer/>
     </>
   );
 }

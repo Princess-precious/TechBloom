@@ -1,3 +1,15 @@
+/**
+    * @description      : 
+    * @author           : HP
+    * @group            : 
+    * @created          : 26/08/2026 - 16:27:47
+    * 
+    * MODIFICATION LOG
+    * - Version         : 1.0.0
+    * - Date            : 26/08/2026
+    * - Author          : HP
+    * - Modification    : 
+**/
 import CourseCard from "../components/coursecard";
 import Learningjourney from "../components/learningjourney";
 import Externalplatforms from "../components/externalplatform";
