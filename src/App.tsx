@@ -15,6 +15,8 @@ import Home from "./pages/Home";
 // import CoursePage from "./pages/coursepage";
 import Stories from "./pages/stories";
 import LearningHub from "./pages/learninghub";
+import CoursePage from "./pages/coursepage";
+
 
 export default function App() {
   return (
@@ -23,6 +25,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/stories" element={<Stories/>}/>
         <Route path="/learninghub" element={<LearningHub/>}/>
+        <Route path="/learninghub/:course"element={<CoursePage />}/>
       </Routes>
     </BrowserRouter>
   );
