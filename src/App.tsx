@@ -12,16 +12,17 @@
 **/
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-// import CoursePage from "./pages/coursepage";
 import Stories from "./pages/stories";
 import LearningHub from "./pages/learninghub";
 import Quiz from "./pages/Quiz";
 import {Toaster} from "sonner";
+import CoursePage from "./pages/coursepage";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
+
         <Route path="/" element={<Home />} />
 
         <Route path="/stories" element={<Stories/>}/>
@@ -29,6 +30,18 @@ export default function App() {
         <Route path="/learninghub" element={<LearningHub/>}/>
 
         <Route path="/quiz" element={<Quiz/>}/> 
+        <Route path="/stories"element={<Stories />}/>
+
+        <Route
+          path="/learninghub"
+          element={<LearningHub />}
+        />
+
+        <Route
+          path="/learning/:courseName"
+          element={<CoursePage />}
+        />
+
       </Routes>
         <Toaster/>
     </BrowserRouter>
