@@ -1,29 +1,32 @@
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
+import type { Course } from "../Data/learningdata";
+
 type CourseCardProps = {
-  title: string;
-  description: string;
-  path:string;
+  course: Course;
 };
 
-export default function CourseCard({ title, description, path }: CourseCardProps) {
-
-  
+function CourseCard({ course }: CourseCardProps) {
   return (
-    <div className="rounded-lg bg-[#142642] p-5">
+    <Link to={course.path}>
+      <div className="cursor-pointer rounded-xl bg-[#10284A] p-6 transition hover:scale-105">
+        <h2 className="text-xl font-bold">
+          {course.title}
+        </h2>
 
-      <h3 className="text-lg font-semibold">
-        {title}
-      </h3>
+        <p className="mt-2 text-gray-300">
+          {course.description}
+        </p>
 
-      <p className="mt-2 text-sm text-gray-400">
-        {description}
-      </p>
+        <p className="mt-4 text-sm text-blue-400">
+          {course.level}
+        </p>
 
-      <Link to="web-development"
-      className="mt-4 text-sm text-cyan-300" >
-              
-               Explore →
-      </Link>
-</div>
-);
+        <div className="mt-4 inline-block rounded-lg text-[#64ffda] px-4 py-2">
+          Explore Course
+        </div>
+      </div>
+    </Link>
+  );
 }
+
+export default CourseCard;

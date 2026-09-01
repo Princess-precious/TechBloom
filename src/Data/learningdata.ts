@@ -5,6 +5,12 @@ export type Module = {
   status: "completed" | "current" | "locked";
 };
 
+export type Resource = {
+  title: string;
+  description: string;
+  url: string;
+};
+
 export type Course = {
   title: string;
   description: string;
@@ -12,6 +18,7 @@ export type Course = {
   icon: string;
   path: string;
   modules: Module[];
+  resources: Resource[];
 };
 
 export const courses: Course[] = [
@@ -46,6 +53,24 @@ export const courses: Course[] = [
         status: "locked",
       },
     ],
+    resources: [
+  {
+    title: "MDN Web Docs",
+    description: "Learn HTML, CSS and JavaScript from detailed web documentation.",
+    url: "https://developer.mozilla.org/",
+  },
+  {
+    title: "freeCodeCamp",
+    description: "Practice web development through interactive lessons and projects.",
+    url: "https://www.freecodecamp.org/",
+  },
+  {
+    title: "W3Schools",
+    description: "Learn web technologies through simple tutorials and examples.",
+    url: "https://www.w3schools.com/",
+  },
+],
+
   },
 
   {
@@ -86,6 +111,24 @@ export const courses: Course[] = [
         status: "locked",
       },
     ],
+    resources: [
+  {
+    title: "Kaggle",
+    description: "Practice data science with datasets, notebooks and competitions.",
+    url: "https://www.kaggle.com/",
+  },
+  {
+    title: "Python Documentation",
+    description: "Official documentation for learning Python.",
+    url: "https://docs.python.org/3/",
+  },
+  {
+    title: "Google Colab",
+    description: "Run Python and data science notebooks in your browser.",
+    url: "https://colab.research.google.com/",
+  },
+],
+
   },
 
   {
@@ -126,6 +169,23 @@ export const courses: Course[] = [
         status: "locked",
       },
     ],
+    resources: [
+  {
+    title: "Figma",
+    description: "Practice interface design and create interactive prototypes.",
+    url: "https://www.figma.com/",
+  },
+  {
+    title: "Nielsen Norman Group",
+    description: "Learn about user experience research and design principles.",
+    url: "https://www.nngroup.com/",
+  },
+  {
+    title: "Interaction Design Foundation",
+    description: "Learn UX design principles and methodologies.",
+    url: "https://www.interaction-design.org/",
+  },
+],
   },
 
   {
@@ -166,6 +226,23 @@ export const courses: Course[] = [
         status: "locked",
       },
     ],
+    resources: [
+  {
+    title: "TryHackMe",
+    description: "Practice cyber security through hands-on learning rooms.",
+    url: "https://tryhackme.com/",
+  },
+  {
+    title: "PortSwigger Web Security Academy",
+    description: "Learn and practice web application security.",
+    url: "https://portswigger.net/web-security",
+  },
+  {
+    title: "OWASP",
+    description: "Learn about web application security and common vulnerabilities.",
+    url: "https://owasp.org/",
+  },
+],
   },
 
   {
@@ -206,6 +283,18 @@ export const courses: Course[] = [
         status: "locked",
       },
     ],
+    resources: [
+  {
+    title: "React Native",
+    description: "Learn how to build mobile applications with React Native.",
+    url: "https://reactnative.dev/",
+  },
+  {
+    title: "Expo",
+    description: "Build and develop React Native applications more easily.",
+    url: "https://expo.dev/",
+  },
+],
   },
 
   {
@@ -246,6 +335,19 @@ export const courses: Course[] = [
         status: "locked",
       },
     ],
+    resources: [
+  {
+    title: "Atlassian",
+    description: "Learn project management practices and agile methodologies.",
+    url: "https://www.atlassian.com/",
+  },
+  {
+    title: "Project Management Institute",
+    description: "Explore project management resources and professional practices.",
+    url: "https://www.pmi.org/",
+  },
+],
+
   },
 ]
   

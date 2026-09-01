@@ -20,7 +20,7 @@ const platforms: Platform[] = [
 
 function ExternalPlatforms() {
   return (
-    <section className="rounded-xl border border-slate-700 bg-[#10223D] p-6">
+    <section className="rounded-xl border border-slate-700 bg-[#10223D] p-6 mt-8">
 
       <h2 className="text-xl font-semibold">
         External Platforms
