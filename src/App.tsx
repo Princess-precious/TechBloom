@@ -14,6 +14,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Stories from "./pages/stories";
 import LearningHub from "./pages/learninghub";
+import Quiz from "./pages/Quiz";
+import {Toaster} from "sonner";
 import CoursePage from "./pages/coursepage";
 
 export default function App() {
@@ -23,6 +25,11 @@ export default function App() {
 
         <Route path="/" element={<Home />} />
 
+        <Route path="/stories" element={<Stories/>}/>
+
+        <Route path="/learninghub" element={<LearningHub/>}/>
+
+        <Route path="/quiz" element={<Quiz/>}/> 
         <Route path="/stories"element={<Stories />}/>
 
         <Route
@@ -36,6 +43,7 @@ export default function App() {
         />
 
       </Routes>
+        <Toaster/>
     </BrowserRouter>
   );
 }
