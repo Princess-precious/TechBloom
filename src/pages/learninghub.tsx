@@ -33,12 +33,10 @@ function learningHub() {
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 
           {courses.map((course) => (
-            <CourseCard
-              key={course.title}
-              title={course.title}
-              description={course.description}
-              path={course.path}
-            />
+           <CourseCard
+            key={course.title}
+          course={course}
+           />
           ))}
 
         </div>
@@ -51,7 +49,7 @@ function learningHub() {
 
         <div className="lg:col-span-2">
       
-<div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
+<div className="mt-8 grid grid-cols-1 gap-4 lg:grid-cols-3">
 
   <div className="lg:col-span-2">
     <LearningJourney modules={courses[0].modules} />
