@@ -16,11 +16,12 @@ type ButtonProps = {
     onClick?: () => void;
     className?: string;
     children?: React.ReactNode;
+    disabled?: boolean;
 }
 
-function Button({onClick, className, children }: ButtonProps) {
+function Button({onClick, className, children, disabled}: ButtonProps) {
     return (
-        <button onClick={onClick} className={`bg-[#64ffda] text-black rounded-sm hover:opacity-80 active:opacity-80 ${className ?? ""}`}>
+        <button onClick={onClick} disabled={disabled} className={`bg-[#64ffda] text-black rounded-sm hover:opacity-80 active:opacity-80 ${className ?? ""}`}>
             {children}
         </button>
     )

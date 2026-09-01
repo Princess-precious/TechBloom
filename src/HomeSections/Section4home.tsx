@@ -12,6 +12,7 @@
 **/
 import P from "../ui/p"
 import H1 from "../ui/h1"
+import Form from "../components/form"
 
 function Section4home(){
   return(
@@ -46,24 +47,7 @@ function Section4home(){
         </div>
 
         <div className="flex-1 flex flex-col items-end">
-          <form>
-            {/* NAME */}
-            <div className="flex flex-col">
-              <label className="text-[rgb(100,255,218)] text-sm">Name</label>
-              <input type="text" className="bg-white rounded-lg w-[300px] hover:border-2 hover:border-[#64ffda] focus:border-[#64ffda] focus:border-2  focus:outline-none text-sm text-black p-1"></input>
-            </div>
-            {/* EMAIL */}
-            <div className="flex flex-col mt-2">
-              <label className="text-[rgb(100,255,218)] text-sm">Email</label>
-              <input type="email" className="bg-white rounded-lg w-[300px] hover:border-2 hover:border-[#64ffda] focus:border-[#64ffda] focus:border-2  focus:outline-none text-sm text-black p-1"></input>
-            </div>
-            {/* MESSAGE */}
-            <div className="flex flex-col mt-2">
-              <label className="text-[rgb(100,255,218)] text-sm">Message</label>
-              <textarea className="bg-white rounded-lg w-[300px] hover:border-2 hover:border-[#64ffda] focus:border-[#64ffda] focus:border-2  focus:outline-none text-sm text-black p-1"></textarea>
-            </div>
-           
-          </form>
+          <Form/>
         </div>
       </div>
     </section>

@@ -35,6 +35,7 @@ function Navbar() {
       </div>
 
       <div className="hidden md:flex md:items-center md:gap-4">
+        <Button className=" text-sm p-1">Sign Up</Button>
         <Button className=" text-sm p-1">Sign In</Button>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -53,14 +54,15 @@ function Navbar() {
     </nav>
 
     {showMenu && (
-    <div className="md:hidden rounded-lg bg-white flex flex-col items-end gap-4 p-4  fixed top-[80px] right-0 z-40 ">
+    <div className="md:hidden rounded-lg bg-white flex flex-col items-center gap-4 p-4  fixed top-[80px] right-0 z-40 ">
       <div className="flex flex-col items-center gap-6 text-sm text-black">
-        <Link to="" className="hover:text-[#64ffda] active:text-[#64ffda]">Stories</Link>
-        <Link to="" className="hover:text-[#64ffda] active:text-[#64ffda]">LearningHub</Link>
-        <Link to="" className="hover:text-[#64ffda] active:text-[#64ffda]">PathFinder Quiz</Link>
+        <Link to="/stories" className="hover:text-[#64ffda] active:text-[#64ffda]">Stories</Link>
+        <Link to="/learninghub" className="hover:text-[#64ffda] active:text-[#64ffda]">LearningHub</Link>
+        <Link to="/quiz" className="hover:text-[#64ffda] active:text-[#64ffda]">PathFinder Quiz</Link>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="flex flex-col items-center gap-4">
+        <Button className="bg-[#64ffda] text-black text-sm p-1 rounded-sm hover:opacity-80 active:opacity-80">Sign  Up</Button>
         <Button className="bg-[#64ffda] text-black text-sm p-1 rounded-sm hover:opacity-80 active:opacity-80">Sign In</Button>
         <div>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#2d6a6a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

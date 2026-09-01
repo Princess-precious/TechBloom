@@ -16,6 +16,7 @@ import Home from "./pages/Home";
 import Stories from "./pages/stories";
 import LearningHub from "./pages/learninghub";
 import Quiz from "./pages/Quiz";
+import {Toaster} from "sonner";
 
 export default function App() {
   return (
@@ -27,8 +28,9 @@ export default function App() {
 
         <Route path="/learninghub" element={<LearningHub/>}/>
 
-        <Route path="/quiz" element={<Quiz/>}/>
+        <Route path="/quiz" element={<Quiz/>}/> 
       </Routes>
+        <Toaster/>
     </BrowserRouter>
   );
 }
